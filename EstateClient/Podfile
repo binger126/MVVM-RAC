@@ -1,0 +1,25 @@
+target 'EstateClient' do
+platform :ios, '8.0'
+        pod 'PGNetworkHelper',            '~> 2.0'
+        # PGNetworkHelper屏蔽了AFNetworking自带的缓存，并将PINCache缓存的key也用MD5加密，确保数据的安全。
+        # PGNetworkHelper也支持同步请求
+        pod 'MJExtension',                '~> 3.0'
+        # The fastest and most convenient conversion between JSON and model
+        pod 'YYWebImage',                 '~> 1.0'   # 加载网络图片
+        pod 'ZYQAssetPickerController',   '~> 1.0'   # 图库选图
+        pod 'SVProgressHUD',              '~> 2.0'   # 提示框
+        pod 'MyLayout',                   '~> 1.2'   # iOS界面布局库,基于对frame属性
+        pod 'FMDB',                       '~> 2.6'   # 数据库工具
+        pod 'RSKImageCropper',            '~> 1.5'   # RSKIMAGECROPPER图片裁剪
+        pod 'NSObjectExtend',             '~> 1.8'   # NSObject 系列类添扩展
+        pod 'MJRefresh',                  '~> 3.1'   # The easiest way to use pull-to-refresh
+        # 消息链
+        # pod 'ReactiveCocoa'                     ,'2.5'
+        # 适配Xcode9.0 iOS 11
+        pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+end
+target 'EstateClientTests' do
+end
+
+target 'EstateClientUITests' do
+end
