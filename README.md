@@ -1,0 +1,4 @@
+Demo主要使用MVVM模式和RAC相结合实现了登录注册页面，其主要参考大神经验《其简书地址附上，推荐学习http://www.jianshu.com/u/126498da7523》
+其中Demo中包含了使用PGNetworkHelper再次封装的AFNetworking网络请求框架
+自己小整一下供自己使用的工具类AFHttpTool
+
